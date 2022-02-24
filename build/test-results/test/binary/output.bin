@@ -1,0 +1,150 @@
+Request method:	POST
+0Request URI:	https://todo.ly/api/projects.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+<Headers:		Authorization=Basic dXBiX2FwaUBhcGkuY29tOjEyMzQ1
+				Accept=*/*
+1				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+IC:\Users\santi\git_repo\API-Testing\src\test\resources\projectBody.json
+HTTP/1.1 200 OK
+4Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+/Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+XSet-Cookie: ASP.NET_SessionId=y5roybzu5v03dwxj4hjv313m; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+%Date: Thu, 24 Feb 2022 12:23:01 GMT
+Content-Length: 406
+
+{
+    "Id": 3981679,
+$    "Content": "SantiagoVExternal",
+    "ItemsCount": 0,
+    "Icon": 5,
+    "ItemType": 2,
+    "ParentId": null,
+    "Collapsed": false,
+    "ItemOrder": 66,
+    "Children": [
+	        
+    ],
+    "IsProjectShared": false,
+#    "ProjectShareOwnerName": null,
+$    "ProjectShareOwnerEmail": null,
+    "IsShareApproved": false,
+    "IsOwnProject": true,
+3    "LastSyncedDateTime": "/Date(1645705382334)/",
+0    "LastUpdatedDate": "/Date(1645705382333)/",
+    "Deleted": false,
+!    "SyncClientCreationId": null
+}
+Request method:	POST
+0Request URI:	https://todo.ly/api/projects.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+<Headers:		Authorization=Basic dXBiX2FwaUBhcGkuY29tOjEyMzQ1
+				Accept=*/*
+1				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+#  "Content":"SantiagoRestAssured",
+  "Icon":"4"
+}
+HTTP/1.1 200 OK
+4Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+/Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+XSet-Cookie: ASP.NET_SessionId=geepwtytpyyi5105r3521cld; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+%Date: Thu, 24 Feb 2022 12:23:04 GMT
+Content-Length: 408
+
+{
+    "Id": 3981680,
+&    "Content": "SantiagoRestAssured",
+    "ItemsCount": 0,
+    "Icon": 4,
+    "ItemType": 2,
+    "ParentId": null,
+    "Collapsed": false,
+    "ItemOrder": 67,
+    "Children": [
+	        
+    ],
+    "IsProjectShared": false,
+#    "ProjectShareOwnerName": null,
+$    "ProjectShareOwnerEmail": null,
+    "IsShareApproved": false,
+    "IsOwnProject": true,
+3    "LastSyncedDateTime": "/Date(1645705384393)/",
+0    "LastUpdatedDate": "/Date(1645705384377)/",
+    "Deleted": false,
+!    "SyncClientCreationId": null
+}
+Request method:	POST
+0Request URI:	https://todo.ly/api/projects.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+<Headers:		Authorization=Basic dXBiX2FwaUBhcGkuY29tOjEyMzQ1
+				Accept=*/*
+1				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+%{"Content":"SantiagoJSON","Icon":4}
+HTTP/1.1 200 OK
+4Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+/Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+XSet-Cookie: ASP.NET_SessionId=0qr1dpnwa3e3wzahtflk4lmy; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+%Date: Thu, 24 Feb 2022 12:23:06 GMT
+Content-Length: 401
+
+{
+    "Id": 3981681,
+    "Content": "SantiagoJSON",
+    "ItemsCount": 0,
+    "Icon": 4,
+    "ItemType": 2,
+    "ParentId": null,
+    "Collapsed": false,
+    "ItemOrder": 68,
+    "Children": [
+	        
+    ],
+    "IsProjectShared": false,
+#    "ProjectShareOwnerName": null,
+$    "ProjectShareOwnerEmail": null,
+    "IsShareApproved": false,
+    "IsOwnProject": true,
+3    "LastSyncedDateTime": "/Date(1645705386171)/",
+0    "LastUpdatedDate": "/Date(1645705386170)/",
+    "Deleted": false,
+!    "SyncClientCreationId": null
+}
