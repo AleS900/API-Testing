@@ -2,9 +2,7 @@ package basicRestAssured;
 
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
-
 import java.io.File;
-
 import static io.restassured.RestAssured.given;
 
 public class BasicRestAssured {
@@ -75,8 +73,4 @@ public class BasicRestAssured {
                 .then()
                 .log().all();
     }
-
-
-
-
 }

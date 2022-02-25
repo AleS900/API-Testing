@@ -1,4 +1,4 @@
-package basicRestAssured;
+package crud_items;
 
 import io.restassured.response.Response;
 import org.json.JSONObject;
@@ -6,15 +6,12 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class CRUDProject {
-
+public class CRUD_Items {
     @Test
-    public void crudProject(){
-        // Create
+    public void crudItem(){
+        // CREATE
         JSONObject body = new JSONObject();
-        body.put("Content","SantiagoJSON");
-        body.put("Icon",4);
-
+        body.put("Content","SantiagoItem");
         Response response=given()
                 .auth()
                 .preemptive()
@@ -22,31 +19,32 @@ public class CRUDProject {
                 .body(body.toString())
                 .log().all()
                 .when()
-                .post("https://todo.ly/api/projects.json");
+                .post("https://todo.ly/api/items.json");
 
         response.then()
                 .statusCode(200)
-                .body("Content",equalTo("SantiagoJSON"))
-                .body("Icon",equalTo(4))
+                .body("Content",equalTo("SantiagoItem"))
                 .log().all();
 
         int idProject =response.then().extract().path("Id");
 
-        // Read
+
+        // READ
         response=given()
                 .auth()
                 .preemptive()
                 .basic("upb_api@api.com","12345")
                 .log().all()
                 .when()
-                .get("https://todo.ly/api/projects/"+idProject+".json");
+                .get("https://todo.ly/api/items/"+idProject+".json");
 
         response.then()
                 .statusCode(200)
-                .body("Content",equalTo("SantiagoJSON"))
-                .body("Icon",equalTo(4))
+                .body("Content",equalTo("SantiagoItem"))
                 .log().all();
-        // Update
+
+
+        // UPDATE
         body.put("Content","SantiagoUpdate");
         response=given()
                 .auth()
@@ -55,26 +53,26 @@ public class CRUDProject {
                 .body(body.toString())
                 .log().all()
                 .when()
-                .put("https://todo.ly/api/projects/"+idProject+".json");
+                .put("https://todo.ly/api/items/"+idProject+".json");
 
         response.then()
                 .statusCode(200)
                 .body("Content",equalTo("SantiagoUpdate"))
-                .body("Icon",equalTo(4))
                 .log().all();
-        // Delete
+
+
+        // DELETE
         response=given()
                 .auth()
                 .preemptive()
                 .basic("upb_api@api.com","12345")
                 .log().all()
                 .when()
-                .delete("https://todo.ly/api/projects/"+idProject+".json");
+                .delete("https://todo.ly/api/items/"+idProject+".json");
 
         response.then()
                 .statusCode(200)
                 .body("Content",equalTo("SantiagoUpdate"))
-                .body("Icon",equalTo(4))
                 .body("Deleted",equalTo(true))
                 .log().all();
     }

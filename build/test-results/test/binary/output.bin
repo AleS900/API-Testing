@@ -1,5 +1,5 @@
 Request method:	POST
-0Request URI:	https://todo.ly/api/projects.json
+-Request URI:	https://todo.ly/api/items.json
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -11,44 +11,52 @@
 Cookies:		<none>
 Multiparts:		<none>
 Body:
-IC:\Users\santi\git_repo\API-Testing\src\test\resources\projectBody.json
+FC:\Users\santi\git_repo\API-Testing\src\test\resources\itemBody.json
 HTTP/1.1 200 OK
 4Cache-Control: no-cache, no-store, must-revalidate
 Pragma: no-cache
 /Content-Type: application/json; charset=utf-8
 Expires: -1
 Server: Microsoft-IIS/8.0
-XSet-Cookie: ASP.NET_SessionId=y5roybzu5v03dwxj4hjv313m; path=/; HttpOnly; SameSite=Lax
+XSet-Cookie: ASP.NET_SessionId=5y3iowj2pbpmjiqgttj55glv; path=/; HttpOnly; SameSite=Lax
 X-AspNetMvc-Version: 2.0
 X-AspNet-Version: 4.0.30319
 X-Powered-By: ASP.NET
-%Date: Thu, 24 Feb 2022 12:23:01 GMT
-Content-Length: 406
+%Date: Fri, 25 Feb 2022 02:51:07 GMT
+Content-Length: 542
 
 {
-    "Id": 3981679,
-$    "Content": "SantiagoVExternal",
-    "ItemsCount": 0,
-    "Icon": 5,
-    "ItemType": 2,
+    "Id": 11003304,
+(    "Content": "Item_1-VargasSantiago",
+    "ItemType": 1,
+    "Checked": false,
+    "ProjectId": null,
     "ParentId": null,
+    "Path": "",
     "Collapsed": false,
-    "ItemOrder": 66,
+    "DateString": null,
+    "DateStringPriority": 0,
+    "DueDate": "",
+    "Recurrence": null,
+    "ItemOrder": null,
+    "Priority": 4,
+3    "LastSyncedDateTime": "/Date(1645757467882)/",
     "Children": [
 	        
     ],
-    "IsProjectShared": false,
-#    "ProjectShareOwnerName": null,
-$    "ProjectShareOwnerEmail": null,
-    "IsShareApproved": false,
-    "IsOwnProject": true,
-3    "LastSyncedDateTime": "/Date(1645705382334)/",
-0    "LastUpdatedDate": "/Date(1645705382333)/",
+    "DueDateTime": null,
+,    "CreatedDate": "/Date(1645757467867)/",
+    "LastCheckedDate": null,
+0    "LastUpdatedDate": "/Date(1645757467867)/",
     "Deleted": false,
-!    "SyncClientCreationId": null
+    "Notes": "",
+    "InHistory": false,
+"    "SyncClientCreationId": null,
+    "DueTimeSpecified": true,
+    "OwnerId": 701882
 }
 Request method:	POST
-0Request URI:	https://todo.ly/api/projects.json
+-Request URI:	https://todo.ly/api/items.json
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -60,47 +68,52 @@
 Cookies:		<none>
 Multiparts:		<none>
 Body:
-{
-#  "Content":"SantiagoRestAssured",
-  "Icon":"4"
-}
+%{"Content":"Item_1-VargasSantiago"}
 HTTP/1.1 200 OK
 4Cache-Control: no-cache, no-store, must-revalidate
 Pragma: no-cache
 /Content-Type: application/json; charset=utf-8
 Expires: -1
 Server: Microsoft-IIS/8.0
-XSet-Cookie: ASP.NET_SessionId=geepwtytpyyi5105r3521cld; path=/; HttpOnly; SameSite=Lax
+XSet-Cookie: ASP.NET_SessionId=mtjxyf5tbymdzfp3kodi0ng1; path=/; HttpOnly; SameSite=Lax
 X-AspNetMvc-Version: 2.0
 X-AspNet-Version: 4.0.30319
 X-Powered-By: ASP.NET
-%Date: Thu, 24 Feb 2022 12:23:04 GMT
-Content-Length: 408
+%Date: Fri, 25 Feb 2022 02:51:10 GMT
+Content-Length: 542
 
 {
-    "Id": 3981680,
-&    "Content": "SantiagoRestAssured",
-    "ItemsCount": 0,
-    "Icon": 4,
-    "ItemType": 2,
+    "Id": 11003305,
+(    "Content": "Item_1-VargasSantiago",
+    "ItemType": 1,
+    "Checked": false,
+    "ProjectId": null,
     "ParentId": null,
+    "Path": "",
     "Collapsed": false,
-    "ItemOrder": 67,
+    "DateString": null,
+    "DateStringPriority": 0,
+    "DueDate": "",
+    "Recurrence": null,
+    "ItemOrder": null,
+    "Priority": 4,
+3    "LastSyncedDateTime": "/Date(1645757470175)/",
     "Children": [
 	        
     ],
-    "IsProjectShared": false,
-#    "ProjectShareOwnerName": null,
-$    "ProjectShareOwnerEmail": null,
-    "IsShareApproved": false,
-    "IsOwnProject": true,
-3    "LastSyncedDateTime": "/Date(1645705384393)/",
-0    "LastUpdatedDate": "/Date(1645705384377)/",
+    "DueDateTime": null,
+,    "CreatedDate": "/Date(1645757470160)/",
+    "LastCheckedDate": null,
+0    "LastUpdatedDate": "/Date(1645757470160)/",
     "Deleted": false,
-!    "SyncClientCreationId": null
+    "Notes": "",
+    "InHistory": false,
+"    "SyncClientCreationId": null,
+    "DueTimeSpecified": true,
+    "OwnerId": 701882
 }
 Request method:	POST
-0Request URI:	https://todo.ly/api/projects.json
+-Request URI:	https://todo.ly/api/items.json
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -112,39 +125,49 @@
 Cookies:		<none>
 Multiparts:		<none>
 Body:
-%{"Content":"SantiagoJSON","Icon":4}
+{
+'  "Content":"SantiagoRestAssuredItem",
+}
 HTTP/1.1 200 OK
 4Cache-Control: no-cache, no-store, must-revalidate
 Pragma: no-cache
 /Content-Type: application/json; charset=utf-8
 Expires: -1
 Server: Microsoft-IIS/8.0
-XSet-Cookie: ASP.NET_SessionId=0qr1dpnwa3e3wzahtflk4lmy; path=/; HttpOnly; SameSite=Lax
+XSet-Cookie: ASP.NET_SessionId=3yqx3m0egzgca5npih5hw213; path=/; HttpOnly; SameSite=Lax
 X-AspNetMvc-Version: 2.0
 X-AspNet-Version: 4.0.30319
 X-Powered-By: ASP.NET
-%Date: Thu, 24 Feb 2022 12:23:06 GMT
-Content-Length: 401
+%Date: Fri, 25 Feb 2022 02:51:11 GMT
+Content-Length: 544
 
 {
-    "Id": 3981681,
-    "Content": "SantiagoJSON",
-    "ItemsCount": 0,
-    "Icon": 4,
-    "ItemType": 2,
+    "Id": 11003306,
+*    "Content": "SantiagoRestAssuredItem",
+    "ItemType": 1,
+    "Checked": false,
+    "ProjectId": null,
     "ParentId": null,
+    "Path": "",
     "Collapsed": false,
-    "ItemOrder": 68,
+    "DateString": null,
+    "DateStringPriority": 0,
+    "DueDate": "",
+    "Recurrence": null,
+    "ItemOrder": null,
+    "Priority": 4,
+3    "LastSyncedDateTime": "/Date(1645757471392)/",
     "Children": [
 	        
     ],
-    "IsProjectShared": false,
-#    "ProjectShareOwnerName": null,
-$    "ProjectShareOwnerEmail": null,
-    "IsShareApproved": false,
-    "IsOwnProject": true,
-3    "LastSyncedDateTime": "/Date(1645705386171)/",
-0    "LastUpdatedDate": "/Date(1645705386170)/",
+    "DueDateTime": null,
+,    "CreatedDate": "/Date(1645757471377)/",
+    "LastCheckedDate": null,
+0    "LastUpdatedDate": "/Date(1645757471377)/",
     "Deleted": false,
-!    "SyncClientCreationId": null
+    "Notes": "",
+    "InHistory": false,
+"    "SyncClientCreationId": null,
+    "DueTimeSpecified": true,
+    "OwnerId": 701882
 }
